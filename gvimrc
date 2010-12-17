@@ -37,7 +37,7 @@ set t_vb=
 let g:ragtag_global_maps = 1
 
 " Default gui color scheme
-color ir_black
+color tir_black
 
 " ConqueTerm wrapper
 function StartTerm()

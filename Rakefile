@@ -146,7 +146,8 @@ vim_plugin_task "rails",            "git://github.com/tpope/vim-rails.git"
 vim_plugin_task "markdown",         "git://github.com/tpope/vim-markdown.git"
 vim_plugin_task "unimpaired",       "git://github.com/tpope/vim-unimpaired.git"
 vim_plugin_task "ragtag",           "git://github.com/tpope/vim-ragtag.git"
-vim_plugin_task "endwise",          "git://github.com/tpope/vim-endwise.git"
+# vim_plugin_task "endwise",          "git://github.com/tpope/vim-endwise.git"
+
 
 vim_plugin_task "command_t",        "git://github.com/wincent/Command-T.git" do
   sh "find ruby -name '.gitignore' | xargs rm"
