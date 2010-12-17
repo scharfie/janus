@@ -21,8 +21,23 @@ endif
 " Start without the toolbar
 set guioptions-=T
 
+" Turn off scrollbars
+set guioptions-=L
+set guioptions-=r
+
+" Font
+set guifont=Inconsolata:h18
+
+" Turn off bells
+set noerrorbells
+set visualbell
+set t_vb=
+
+" enable ragtag everywhere
+let g:ragtag_global_maps = 1
+
 " Default gui color scheme
-color molokai
+color ir_black
 
 " ConqueTerm wrapper
 function StartTerm()
