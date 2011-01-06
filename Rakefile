@@ -133,7 +133,7 @@ vim_plugin_task "nerdcommenter",    "git://github.com/scrooloose/nerdcommenter.g
 vim_plugin_task "supertab",         "git://github.com/ervandew/supertab.git"
 vim_plugin_task "textile",          "git://github.com/timcharper/textile.vim.git"
 vim_plugin_task "rspec",            "git://github.com/taq/vim-rspec.git"
-vim_plugin_task "snipmate",         "git://github.com/msanders/snipmate.vim.git"
+vim_plugin_task "snipmate",         "git://github.com/scharfie/snipmate.vim.git"
 vim_plugin_task "autoclose",        "git://github.com/vim-scripts/AutoClose.git"
 vim_plugin_task "align",            "git://github.com/tsaleh/vim-align.git"
 vim_plugin_task "surround",         "git://github.com/tpope/vim-surround.git"

@@ -25,6 +25,12 @@ set guioptions-=T
 set guioptions-=L
 set guioptions-=r
 
+" Turn off invisibles
+set nolist
+
+" set ignores
+set wildignore=*.o,*.obj,.git,*.rbc,vendor/rails/*,tmp/*
+
 " Font
 set guifont=Inconsolata:h18
 
