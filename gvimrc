@@ -1,5 +1,14 @@
 
+if has("gui_running")
+  set guifont=Monospace\ 14
+  map <C-t> :CommandT<CR>
+  map <C-/> <plug>NERDCommenterToggle<CR>
+endif
+
 if has("gui_macvim")
+  " Font
+  set guifont=Inconsolata:h18
+
   " Fullscreen takes up entire screen
   set fuoptions=maxhorz,maxvert
 
@@ -25,8 +34,11 @@ set guioptions-=T
 set guioptions-=L
 set guioptions-=r
 
-" Font
-set guifont=Inconsolata:h18
+" Turn off invisibles
+set nolist
+
+" set ignores
+set wildignore=*.o,*.obj,.git,*.rbc,vendor/rails/*,tmp/*
 
 " Turn off bells
 set noerrorbells
