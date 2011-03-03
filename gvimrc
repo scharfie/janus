@@ -1,3 +1,4 @@
+" let delimitMate_smart_matchpairs = ''
 
 if has("gui_running")
   set guifont=Monospace\ 14
