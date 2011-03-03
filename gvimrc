@@ -4,6 +4,8 @@ if has("gui_running")
   set guifont=Monospace\ 14
   map <C-t> :CommandT<CR>
   map <C-/> <plug>NERDCommenterToggle<CR>
+  " source $VIMRUNTIME/mswin.vim
+  " behave mswin
 endif
 
 if has("gui_macvim")
