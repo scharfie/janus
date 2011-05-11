@@ -41,7 +41,7 @@ set guioptions-=r
 set nolist
 
 " set ignores
-set wildignore=*.o,*.obj,.git,*.rbc,vendor/rails/*,tmp/*
+set wildignore=*.o,*.obj,.git,*.rbc,vendor/rails/*,tmp/*,build,build-iphoneos,build-iphonesimulator
 
 " Turn off bells
 set noerrorbells
