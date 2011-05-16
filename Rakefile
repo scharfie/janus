@@ -202,6 +202,10 @@ vim_plugin_task "ir_black" do
   sh "curl https://github.com/gilesbowkett/ir_black/raw/master/ir_black.vim > colors/ir_black.vim"
 end
 
+vim_plugin_task 'yaml' do
+  sh "curl https://gist.github.com/raw/871107/dcb7edf5e9f9b1c74c4307947f673cb001e18ae9/yaml.vim > ftplugin/yaml.vim"
+end
+
 desc "Cleanup all the files"
 task :clean do
   rm_rf "tmp"
