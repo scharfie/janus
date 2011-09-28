@@ -1,11 +1,15 @@
 " let delimitMate_smart_matchpairs = ''
 
 if has("gui_running")
-  set guifont=Monospace\ 14
+  set guifont=Monospace\ 16
   map <C-t> :CommandT<CR>
   map <C-/> <plug>NERDCommenterToggle<CR>
+  " set transparency=25
   " source $VIMRUNTIME/mswin.vim
   " behave mswin
+  "
+  " default to fullscreen
+  " set fu
 endif
 
 if has("gui_macvim")
@@ -52,7 +56,8 @@ set t_vb=
 let g:ragtag_global_maps = 1
 
 " Default gui color scheme
-color tir_black
+" color tir_black
+color lettuce
 
 " ConqueTerm wrapper
 function StartTerm()

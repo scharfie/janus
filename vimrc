@@ -22,6 +22,7 @@ set smartcase
 " Tab completion
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc
+set complete-=i
 
 " Status bar
 set laststatus=2
@@ -38,6 +39,10 @@ map <Leader>z :ZoomWin<CR>
 
 " CTags
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
+
+" Expands %% to the path of the current file
+" http://vim.wikia.com/wiki/Easy_edit_of_files_in_the_same_directory
+cabbr %% <C-R>=expand('%:p:h')<CR>
 
 " Remember last location in file
 if has("autocmd")
