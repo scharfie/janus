@@ -44,9 +44,6 @@ set guioptions-=r
 " Turn off invisibles
 set nolist
 
-" set ignores
-set wildignore=*.o,*.obj,.git,*.rbc,vendor/rails/*,tmp/*,build,build-iphoneos,build-iphonesimulator
-
 " Turn off bells
 set noerrorbells
 set visualbell
@@ -56,8 +53,8 @@ set t_vb=
 let g:ragtag_global_maps = 1
 
 " Default gui color scheme
-" color tir_black
-color lettuce
+color tir_black
+"color lettuce
 
 " ConqueTerm wrapper
 function StartTerm()

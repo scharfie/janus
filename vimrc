@@ -13,6 +13,8 @@ set softtabstop=2
 set expandtab
 set listchars="tab: ,trail: "
 
+let mapleader=","
+
 " Searching
 set hlsearch
 set incsearch
@@ -21,11 +23,25 @@ set smartcase
 
 " Tab completion
 set wildmode=list:longest,list:full
-set wildignore+=*.o,*.obj,.git,*.rbc
 set complete-=i
+
+" set ignores
+set wildignore=*.o,*.obj,.git,*.rbc,vendor/**,tmp/**,notes/**,build,build-iphoneos,build-iphonesimulator
 
 " Status bar
 set laststatus=2
+
+" sticky-shift (http://www.linuxforums.org/forum/applications/171681-bind-capital-w-write-vim.html)
+command WQ wq
+command Wq wq
+command W w
+command Q q
+
+command Flush :CommandTFlush
+
+" find in project
+command Fip   :NERDTreeFind
+command Ff    :NERDTreeFind
 
 " NERDTree configuration
 let NERDTreeIgnore=['\.rbc$', '\~$']
